@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical"
+    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Match 05"
+            android:id="@+id/text_match_number"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="10sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M.A. Chidambaram Stadium, Chennai"
+            android:textColor="@color/white"
+            android:id="@+id/text_location"
+            android:gravity="center"
+            android:textSize="10sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_margin="4dp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/image_teamA_logo"
+                android:src="@drawable/team2"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+
+                android:orientation="horizontal"
+                android:layout_margin="6dp"
+                android:weightSum="2"
+
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="KINGS"
+                        android:id="@+id/text_teamA_name"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:id="@+id/text_teamA_score"
+                        android:textStyle="bold"
+                        android:text="15/0"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:id="@+id/text_teamA_overs"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="3/20"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Thalapathi"
+                        android:id="@+id/text_teamB_name"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:id="@+id/text_teamB_score"
+                        android:textStyle="bold"
+                        android:text="203/0"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:id="@+id/text_teamB_overs"
+                        android:text="20"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="100dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/team2"
+                android:id="@+id/image_teamB_logo"
+                android:padding="2dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+

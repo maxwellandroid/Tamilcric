@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:id="@+id/layout_contained_view"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="6dp"
+        android:background="@drawable/lightbackground"
+        android:id="@+id/image_team_logo"
+        android:src="@drawable/team1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="6dp"
+        android:id="@+id/team_name"
+        android:text="Chennai Super Kings"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:gravity="center"/>
+
+
+</LinearLayout>

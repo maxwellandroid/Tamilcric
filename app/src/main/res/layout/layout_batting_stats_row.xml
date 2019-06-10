@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout_contained_view"
+    android:padding="3dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:layout_margin="5dp"
+        android:text="ORANGE CAP"
+        android:textColor="@color/white"
+        android:id="@+id/text_tag"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout_player_info"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/image_player"
+        android:src="@drawable/dhoni"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="M.S. Dhoni"
+             android:paddingLeft="12dp"
+                android:textSize="16sp"
+                android:id="@+id/text_player_name"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/image_team_logo"
+                    android:src="@drawable/csk"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chennai Super Kings"
+                    android:padding="4sp"
+                    android:id="@+id/text_team_name"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="700"
+                android:id="@+id/text_score"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="runs"
+                android:paddingLeft="6dp"
+                android:gravity="center"
+                android:id="@+id/text_score_tag"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_no_details"
+        android:text="Not Updated"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:padding="12sp"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+</LinearLayout>

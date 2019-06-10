@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundimage"
+    tools:context=".MatchScheduleActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25dp"
+                android:src="@drawable/left_arrow"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:tint="@color/white"
+                android:onClick="backPressed"
+                android:padding="3dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/tcalogo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Match Schedule"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:gravity="center_vertical"
+            android:id="@+id/rela_animation">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/screen_background_dark_transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_home"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:id="@+id/text_tournament_name"
+            android:background="@color/white"
+            android:text="GROUP MATCH SCHEDULE"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:weightSum="6">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:padding="12sp"
+                android:text="Match No."
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12sp"
+                android:text="Date"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12sp"
+                android:gravity="center"
+                android:text="Time"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12sp"
+                android:text="Ground"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:padding="12sp"
+                android:text="Match BW"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewMatchSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+       >
+    </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:text="Knock Out Schedule"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerKnockoutSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_knock_out_schedule"
+                android:text="Not Updated"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+
+        </RelativeLayout>
+
+   <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:text="Quater Final Schedule"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerQuaterFinalSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_quater_final_schedule"
+                android:text="Not Updated"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:padding="10dp"
+                />
+
+        </RelativeLayout>
+
+ <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:text="Semi Final Schedule"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerSemiFinalSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            >
+        </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_semi_final_schedule"
+                android:text="Not Updated"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:text="Third Place Schedule"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerThirdPlaceSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            >
+        </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_third_place_schedule"
+                android:text="Not Updated"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:text="Final Match Schedule"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerFinalMatchSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_final_match_schedule"
+                android:text="Not Updated"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal|vertical"
+            android:layout_width="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_match_schedule"
+            android:stretchColumns="*">
+
+
+        </TableLayout>
+        </HorizontalScrollView>
+        </ScrollView>
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

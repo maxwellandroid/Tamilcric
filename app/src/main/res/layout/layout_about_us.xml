@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:text="Read more to know about Tamilcric"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#005493"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tcalogo"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:padding="6dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="நாம் ஒர் சிறிய இனம். நாம் விளையாட்டுத் துறை மூலமும் சாதனை புரிவோமாக இருந்தால், எமது இனத்தின் பெருமையை உலகறியச் செய்யலாம்."
+        android:textColor="#941100"
+        android:textSize="12sp"
+        android:padding="6dp"
+        />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="தமிழீழத் தேசியத் தலைவர்"
+        android:textColor="#941100"
+        android:gravity="right"
+            android:textSize="12sp"
+        android:paddingRight="16dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="3dp"
+        />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="மேதகு. வே. பிரபாகரன் அவர்கள்"
+        android:textColor="#941100"
+            android:gravity="right"
+            android:textSize="12sp"
+        android:paddingRight="6dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="மனித வாழ்வோட்டத்தில், விளையாட்டு வகிக்கின்ற பங்கு மிகவும் முக்கியமானது. தனியே வெற்றி தோல்வி என்கின்ற கணிப்பீடுகளுக்கு அப்பால், விளையாட்டு மனிதனை சமுதாய வாழ்வுக்கு பண்படுத்துவதில் முன்னணி வகிக்கின்றது."
+        android:textColor="@android:color/black"
+        android:padding="6dp"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="அணியாக உழைத்தல், தலைமை வகித்தல், தலைமைத்துவத்தை மதித்தல், போன்ற  இயைந்து வாழ்தலின் பல்வேறு கூறுகளையும் விளையாட்டே மனிதனுக்கு போதிக்கின்றது."
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:padding="6dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="மனிதனின் உடல் ஆரோக்கியத்திற்கும், மன உற்சாகத்திற்கும் முன்னிலைப்பங்கு வகிப்பதும் விளையாட்டே. "
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:padding="6dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="நாம் உலகமெங்கும் பரந்து வாழ்கின்ற சிறிய இனம். எமது அடையாளங்கள் சிதைந்து போகாமலும், எமது இளைய தலைமுறையினரிடையே தாயக உணர்வை குன்றாமல் பேணவும், விளையாட்டு மூலம் முயற்சிப்பதே மென்பந்து துடுப்பாட்டப் பிரிவின் நோக்கமாகும். "
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:padding="6dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="மென்பந்து துடுப்பாட்டத்தை ஊக்குவிப்பதுவும், அதன் மூலம் எமது இளைய தலைமுறையினரை ஒருங்கிணைப்பதுவும் எமது முதல்நிலை வேலைத்திட்டமாகும். துடுப்பாட்டப் பிரிவில் உறுப்புரிமை வகிக்கும் கழகங்களும், மேற்படி நோக்கங்களை பூர்த்தி செய்யும் வகையில், தமது செயற்திட்டங்களை முன்னெடுக்கும் பட்சத்தில், விளையாட்டுத்துறை தனது இலக்கு நோக்கி வேகமாக முன்நகரும்."
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:padding="6dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="நாம் வாழுகின்ற நாடுகளின், தொழில்நுட்ப, நிர்வாக அலகுகளின் வளர்ச்சிகளை உள்வாங்கி, எமது தனித்தன்மையான அடையாளங்களுடன் நாம் எமது விளையாட்டு செயற்திட்டங்களை முன்னெடுக்கும் பட்சத்தில், எமது இளம் தலைமுறையினர்  எமது அணிகளிலும், சுற்றுப்போட்டிகளிலும் ஆர்வமுடன் பங்கெடுப்பர் என்பது திண்ணம். "
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:padding="6dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="விளையாட்டுத்துறையின் சீரிய நோக்கங்களை அடைய, உறுப்புரிமை கழகங்கள், வீரர்கள், பெற்றோர்கள், ஆர்வலர்கள் அனைவரினதும் ஒத்துழைப்பு அவசியம். "
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:padding="6dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="மென்பந்து துடுப்பாட்டப்பிரிவு"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:paddingLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"
+        android:paddingBottom="3dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="விளையாட்டுத்துறை"
+        android:textColor="@android:color/black"
+        android:paddingLeft="6dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Website : "
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+     />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="www.tamilcric.ch/"
+        android:textColor="@android:color/black"
+        android:autoLink="web"
+        android:textColorLink="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+     />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Availble on both Google Play and Apple Store. Download it here!"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:padding="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/imageview_google_play"
+            android:padding="6dp"
+            android:src="@drawable/playstore"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:id="@+id/imageview_app_store"
+            android:src="@drawable/appstore"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>

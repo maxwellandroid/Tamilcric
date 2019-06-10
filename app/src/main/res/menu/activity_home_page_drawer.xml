@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_tournament"
+            android:icon="@drawable/tournament"
+            android:title="Tournaments" />
+        <item
+            android:id="@+id/nav_match_schedule"
+            android:icon="@drawable/match_schedule"
+            android:title="Match Schedule" />
+        <item
+            android:id="@+id/nav_team"
+            android:icon="@drawable/teamwork"
+            android:title="Team" />
+        <item
+            android:id="@+id/nav_player"
+            android:icon="@drawable/bats_man"
+            android:title="Players" />
+        <item
+            android:id="@+id/nav_bowling"
+            android:icon="@drawable/bowling"
+            android:title="Bowling" />
+        <item
+            android:id="@+id/nav_batting"
+            android:icon="@drawable/cricket_player_with_bat"
+            android:title="Batting" />
+        <item
+            android:id="@+id/nav_points"
+            android:icon="@drawable/numbered_list"
+            android:title="Points" />
+        <item
+            android:id="@+id/nav_tournament_result"
+            android:icon="@drawable/result"
+            android:title="Result" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/info"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contactus"
+            android:title="Contact" />
+    </group>
+
+
+</menu>

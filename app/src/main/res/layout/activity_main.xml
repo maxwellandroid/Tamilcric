@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellowLight"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/tcalogo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Latest Tournaments"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:padding="12dp"
+
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/yellowLight"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/banner4" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/shadow_ef">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="GET THE LATEST SCORES ON THE GO"
+                        android:textColor="@color/colorYellow"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/arrow"
+                android:textStyle="bold"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scrollbars="horizontal"
+                android:id="@+id/recyclerTeam">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Players"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/arrow"
+                android:textStyle="bold"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scrollbars="horizontal"
+                android:id="@+id/recyclerPlayers">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Point Table"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/arrow"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/arrow"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
